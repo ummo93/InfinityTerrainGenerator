@@ -8,12 +8,12 @@
 #include <functional>
 
 
-#define LANDSCAPE_NOISE_SMALL				0.001f
-#define LANDSCAPE_NOISE_MEDIUM				0.01f
-#define LANDSCAPE_NOISE_BIG					0.00009f
-#define CHUNK_SIZE					        100
-#define CHUNK_TO_MESH_SCALE					5 // if CHUNK_TO_MESH_SCALE = 10, heightmap 100 x 100, => mesh in world coordinates 1000x1000
-#define FAR_AREA_LIMIT_DISTANCE				5 // local coordinates distance (if 5 = CHUNK_SIZE*CHUNK_TO_MESH_SCALE*5 meters)
+#define LANDSCAPE_NOISE_SMALL           0.001f
+#define LANDSCAPE_NOISE_MEDIUM          0.01f
+#define LANDSCAPE_NOISE_BIG             0.00009f
+#define CHUNK_SIZE                      100
+#define CHUNK_TO_MESH_SCALE             5 // if CHUNK_TO_MESH_SCALE = 10, heightmap 100 x 100, => mesh in world coordinates 1000x1000
+#define FAR_AREA_LIMIT_DISTANCE         5 // local coordinates distance (if 5 = CHUNK_SIZE*CHUNK_TO_MESH_SCALE*5 meters)
 
 struct ChunkNode {
     Vector2 location;
